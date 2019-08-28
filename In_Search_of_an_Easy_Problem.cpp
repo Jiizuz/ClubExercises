@@ -1,3 +1,4 @@
+// Exercise 1030A - https://codeforces.com/problemset/problem/1030/A
 #include <iostream>
 
 using namespace std;
@@ -13,7 +14,7 @@ int main() {
             return 0;
         }
     }
-    
+
     cout << "EASY" << endl;
     return 0;
 }
