@@ -1,18 +1,16 @@
 #include <bits/stdc++.h>
 
-using namespace std;
-
 int main() {
     long long int n, c, i;
-    cin >> n >> c;
+    std::cin >> n >> c;
     n--;
 
     while (n--) {
-        cin >> i;
+        std::cin >> i;
         if (i > c) {
-            cout << "N" << endl;
+            std::cout << "N" << std::endl;
             return 0;
         }
     }
-    cout << "S" << endl;
+    std::cout << "S" << std::endl;
 }

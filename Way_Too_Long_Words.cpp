@@ -1,18 +1,17 @@
 // Exercise 71A - https://codeforces.com/problemset/problem/71/A
-#include <iostream>
-#include <cstring>
-#include <string>
-
-using namespace std;
+#include <bits/stdc++.h>
 
 int main() {
     int i;
-    cin>>i;
+    std::cin >> i;
 
     while (i--) {
-        string input;
-        cin >> input;
-        int len = input.length();
-        if (len > 10) cout << input[0] << len-2 << input[len-1] << endl; else cout << input << endl;
+        std::string input;
+        std::cin >> input;
+        int length = input.length();
+        if (length > 10)
+            std::cout << input[0] << length-2 << input[length-1] << std::endl;
+        else
+            std::cout << input << std::endl;
     }
 }
