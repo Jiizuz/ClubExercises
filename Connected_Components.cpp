@@ -29,7 +29,11 @@ int main() {
         bool visited[vertices];
         // Fill the visited vertices (with false)
         std::fill(visited, visited + vertices, false);
-        std::cout << "Case #" << current << ':' << std::endl;
+        // Clear duplicates
+        for (int i = 0; i < vertices; i++)
+            list[i].erase( std::unique( list[i].begin(), list[i].end() ), list[i].end() );
+
+        std::cout << "Case #" << current++ << ':' << std::endl;
         components = 0;
         for (int i = 0; i < vertices; i++) {
             if (visited[i]) continue;
@@ -39,6 +43,6 @@ int main() {
             std::cout << std::endl;
             visit(i, visited, list);
         }
-        std::cout << components << " connected components" << std::endl;
+        std::cout << components << " connected components" << std::endl << std::endl;
     }
 }
